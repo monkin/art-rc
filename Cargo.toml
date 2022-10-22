@@ -1,0 +1,31 @@
+[package]
+name = "art-rc"
+version = "0.1.0"
+authors = ["Andrei Monkin <monkin.andrey@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.82"
+webgl-rc = "0.1.8"
+num-traits = "0.2.15"
+js-sys = "0.3.59"
+
+[dependencies.web-sys]
+version = "0.3.59"
+features = [
+    "console",
+    "Document",
+    "Element",
+    "HtmlElement",
+    "HtmlImageElement",
+    "HtmlCanvasElement",
+    "Node",
+    "Window",
+]
+
+
+[profile.release]
+opt-level = "s"

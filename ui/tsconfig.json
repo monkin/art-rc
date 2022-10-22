@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "jsx": "react",
+    "baseUrl": "./src",
+    "strict": true,
+    "moduleResolution": "Node",
+    "module": "ES2020",
+    "target": "ES2015"
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.wasm"
+  ]
+}
